@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  /* Ejemplo de color rojo */
+  /* --site-navigation-font-font-family: 'brandon-grotesque', sans-serif; */
+  --site-navigation-font-font-family: 'Helvetica Neue', Arial, sans-serif;
+  --site-navigation-font-font-style: normal;
+  --site-navigation-font-font-weight: 500;
+  --site-navigation-font-line-height: 3.2rem;
+  --site-navigation-font-letter-spacing: .23rem;
+  --site-navigation-font-text-transform: uppercase;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  max-width: 100%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}

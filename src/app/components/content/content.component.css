@@ -1,0 +1,620 @@
+.content-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: calc(33vmax / 10);
+  padding-bottom: calc(33vmax / 10);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Banner Win or Lose*/
+.win-lose-banner {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1%;
+  overflow: hidden;
+  display: block;
+  border: 2px solid #797979;
+  box-sizing: border-box;
+}
+
+.win-lose-banner img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.win-lose-banner .banner-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.movie-logo {
+  max-width: 100%;
+}
+
+.release-date {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+.platform-logo {
+  max-width: 100px;
+}
+
+/* Section technology */
+.win-lose-banner .banner-content {
+  right: 6%;
+}
+
+.wol-release-date {
+  font-size: 1.2rem;
+  color: #000000;
+  font-weight: 700;
+  margin: 10px 0;
+  font-family: var(--site-navigation-font-font-family);
+  font-style: var(--site-navigation-font-font-style);
+  letter-spacing: var(--site-navigation-font-letter-spacing);
+  text-transform: var(--site-navigation-font-text-transform);
+}
+
+/* Section careers */
+.careers-section {
+  display: grid;
+  grid-template-columns: 28% 9px 1fr; /* Columna de imágenes + separador blanco + columna de contenido */
+  width: 100%;
+  margin: 2.7% 0 0 0;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* El espacio blanco entre columnas */
+.careers-section::before {
+  content: '';
+  grid-column: 2;
+  background-color: white;
+  height: 100%;
+}
+
+.careers-images,
+.careers-content {
+  position: relative;
+}
+
+.careers-images {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 0;
+}
+
+.row-images {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.career-image {
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  background-color: #292929;
+}
+
+.row-images .career-image:first-child {
+  margin-bottom: 5px;
+  height: calc(50% - 2.5px);
+}
+
+.row-images .career-image:last-child {
+  height: calc(50% - 2.5px);
+}
+
+/* Tercera imagen - oculta en desktop */
+.career-image-3 {
+  display: none;
+}
+
+.career-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.careers-content {
+  grid-column: 3;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  box-sizing: border-box;
+  background-color: #292929; /* Fondo oscuro para el contenido */
+  background-image: url('/career-photo03(car).jpg'); /* Imagen de fondo detrás del texto */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.careers-content h2,
+.careers-content p,
+.careers-content a {
+  position: relative;
+  z-index: 1; /* Para que el texto esté por encima del overlay */
+}
+
+.careers-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+.careers-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  word-wrap: break-word;
+  width: 50%;
+}
+
+.careers-content a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Section elio */
+.elio-banner {
+  max-height: 40vh;
+  position: relative;
+  overflow: visible; /* Permitir que la imagen del personaje desborde en desktop */
+  margin: 2.7% 0 0 0;
+}
+
+.elio-banner .elio-background-img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  display: block;
+}
+
+.elio-character-img {
+  position: absolute;
+  left: -7px;
+  bottom: 0;
+  overflow: visible;
+  z-index: 2;
+  max-width: 50%;
+  pointer-events: none;
+}
+
+.elio-banner-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 3; /* Por encima de la imagen del personaje */
+}
+
+.elio-banner-content img {
+  height: auto;
+  width: 70%;
+}
+
+.elio-banner-content p {
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: var(--site-navigation-font-font-family);
+  font-style: var(--site-navigation-font-font-style);
+  letter-spacing: var(--site-navigation-font-letter-spacing);
+  text-transform: var(--site-navigation-font-text-transform);
+}
+
+.career-image-below {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.career-image-below img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.movie-promotions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 9px;
+  width: 100%;
+  margin: 2.7% 0 0 0;
+  box-sizing: border-box;
+}
+
+.promo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  height: 272px;
+}
+
+.promo-logo {
+  object-fit: contain;
+  display: block;
+}
+
+.dream-productions-bg .promo-logo {
+  max-height: 43%;
+}
+
+.hoppers-logo {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+
+.toy-story-logo {
+  max-width: 100%;
+  max-height: 70%;
+}
+
+.promo-subtitle, .promo-date {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  font-family: var(--site-navigation-font-font-family);
+  font-style: var(--site-navigation-font-font-style);
+  letter-spacing: 3px;
+  text-transform: var(--site-navigation-font-text-transform);
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Fondo Dream Productions con imagen */
+.dream-productions-bg {
+  background: url('/dream-productions_bg.jpg') center center/cover no-repeat;
+}
+
+.dream-productions-bg p {
+  margin-top: 5px;
+}
+.dream-productions-bg .platform-logo {
+  width: 120px;
+  margin-top: 18px;
+}
+
+/* Fondo Toy Story 5 con imagen */
+.toy-story-bg {
+  background: url('/toy-story-background.jpg') center center/cover no-repeat;
+}
+
+.toy-story-bg .promo-date {
+  font-size: 0.8rem;
+  font-weight: 800;
+  margin: 10px 0;
+  font-family: var(--site-navigation-font-font-family);
+  font-style: var(--site-navigation-font-font-style);
+  letter-spacing: 2px;
+  text-transform: var(--site-navigation-font-text-transform);
+}
+
+/* Fondo Hoppers */
+.hoppers-bg {
+  background: rgb(0, 0, 0);
+  position: relative;
+}
+
+.hoppers-bg .promo-logo {
+  width: 80%;
+}
+
+/* Estilo específico para la fecha de Hoppers */
+.promo-date-hoppers {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px 15px;
+  border-radius: 4px;
+  width: auto;
+  margin: 0;
+}
+
+/* Estilos para el separador blanco */
+.white-divider {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 1224px) {
+  .win-lose-banner  {
+    width: 99.6%;
+  }
+
+  .content-container {
+    max-width: 91%;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .movie-promotions-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .promo-card {
+    max-width: 100vw;
+    min-height: 260px;
+    aspect-ratio: 1/1;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .content-container {
+    max-width: 88%;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: calc(33vmax / 10);
+    padding-bottom: calc(33vmax / 10);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Cambiamos el orden de las secciones */
+  #technology {
+    order: 1;
+  }
+  
+  #films {
+    order: 2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #careers {
+    order: 3;
+  }
+  
+  #more {
+    order: 4;
+  }
+  
+  .tech-content, .careers-content {
+    flex-direction: column;
+  }
+  
+  .content-section {
+    padding: 3rem 1rem;
+  }
+  .win-lose-banner-img {
+    height: 27vh;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    transform: translateX(9%);
+    overflow: visible;
+  }
+  .win-lose-banner img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .win-lose-banner {
+    max-width: 100%;
+    padding-bottom: 15px;
+  }
+
+  .win-lose-banner .movie-logo {
+    max-width: 50%;
+    padding-bottom: 20px;
+  }
+  .win-lose-banner .banner-content {
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    right: 2%;
+  }
+  
+  .wol-release-date {
+    font-size: 2.3vw;
+  }
+  .platform-logo {
+    max-width: 90px;
+  }
+  /* Estilos del separador blanco en móvil */
+  .white-divider {
+    display: block;
+    height: 10px;
+    width: 100%;
+    background-color: white;
+  }
+
+  .careers-section {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    padding: 0;
+    margin: 20px 0;
+    grid-template-columns: unset; /* Desactivar grid en móvil */
+  }
+
+  /* Ocultar el separador en móvil */
+  .careers-section::before {
+    display: none;
+  }
+
+  .careers-images {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background-color: white;
+    grid-column: unset; /* Desactivar grid en móvil */
+  }
+
+  /* Contenedor para las dos primeras imágenes */
+  .careers-images .row-images {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 150px;
+    background-color: white;
+  }
+
+  .careers-images .career-image {
+    height: 150px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #292929;
+  }
+
+  /* Espacio entre las dos imágenes horizontales */
+  .careers-images .row-images .career-image:first-child {
+    width: calc(50% - 5px);
+    margin-right: 10px;
+    margin-bottom: 0;
+    height: auto;
+  }
+
+  .careers-images .row-images .career-image:last-child {
+    width: calc(50% - 5px);
+    height: auto;
+  }
+
+  /* Espacio entre fila de imágenes y tercera imagen */
+  .careers-images .career-image-3 {
+    width: 100%;
+    margin-top: 5px;
+    display: block;
+    height: 150px;
+  }
+
+  .career-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .careers-content {
+    width: 100%;
+    align-self: center;
+    padding: 30px 20px 70px;
+    text-align: center;
+    background-color: #292929;
+    grid-column: unset; /* Desactivar grid en móvil */
+    /* Quitar la imagen de fondo en móvil */
+    background-image: none;
+  }
+
+  .careers-content h2 {
+    font-size: 8vw;
+    margin-bottom: 15px;
+    color: white;
+  }
+
+  .careers-content p {
+    font-size: 0.9rem;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    line-height: 1.5;
+    text-align: left;
+  }
+  
+  .careers-content a {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .elio-banner {
+    margin-top: 0; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-height: none;
+    height: auto;
+    overflow: hidden; 
+  }
+  
+  .elio-banner .elio-background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 40vh;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  .elio-character-img {
+    position: relative;
+    max-width: 90%;
+    left: auto;
+    top: auto;
+    bottom: auto;
+    margin: -15% auto 0;
+    z-index: 3;
+    display: block;
+  }
+  
+  .elio-banner-content {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100%;
+    min-height: 40vh;
+    padding: 20px;
+    justify-content: center;
+    z-index: 4; /* Por encima de la imagen del personaje porque no me gustaba como estaba cortado en la página de pixar */
+    box-sizing: border-box;
+  }
+  
+  .elio-banner-content img {
+    max-width: 80%;
+  }
+}
+
