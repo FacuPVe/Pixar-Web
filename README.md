@@ -1,6 +1,6 @@
 # PixarWeb
 
-En este proyecto se ha recreado la página web de inicio de Pixar (https://www.pixar.com/) para poner en práctica el desarrollo con Angular. En concreto, esta versión de la página ha sido recreada (sin tener en cuenta el responsive): https://web.archive.org/web/20250204222454/https://www.pixar.com/
+En este proyecto se ha recreado la página web de inicio de Pixar (https://www.pixar.com/) para poner en práctica el desarrollo con Angular. En concreto, esta versión de la página ha sido recreada: https://web.archive.org/web/20250204222454/https://www.pixar.com/
 
 Se han implementado los siguientes 4 componentes:
 
