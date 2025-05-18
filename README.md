@@ -2,6 +2,10 @@
 
 En este proyecto se ha recreado la página web de inicio de Pixar (https://www.pixar.com/) para poner en práctica el desarrollo con Angular. En concreto, esta versión de la página ha sido recreada: https://web.archive.org/web/20250204222454/https://www.pixar.com/
 
+
+https://github.com/user-attachments/assets/155ff717-f76e-4d80-8bef-c6a888eceeb6
+
+
 Se han implementado los siguientes 4 componentes:
 
 - **Componente 1**: Header de la página que contiene las secciones FILMS, TECHNOLOGY, CARERRS y MORE. Al hacer clic sobre esas secciones, se nos llevará a partes de la misma página (enlace anclado).
